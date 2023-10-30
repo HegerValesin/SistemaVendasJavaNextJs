@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: vendasapi
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://hegervalesin.ddns.net:3306/vendas
+    username: root
+    password: sonois
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          ussuer-uri: http://hegervalesin.ddns.net:8082/realms/UNIUHS
