@@ -1,0 +1,7 @@
+#Keycloak
+KEYCLOAK_REALM=http://exemplo.com.br/realms/<Nome do Ralm>
+KEYCLOAK_CLIENT_ID=(id do cliente)
+KEYCLOAK_CLIENT_SECRET=
+NEXTAUTH_URL=http://exemploRedirecionamentoSeDerCerto.com.br/
+NEXTAUTH_SECRET=
+END_SESSION_URL=http://exemplo.com.br/realms/<Nome do Ralm>/protocol/openid-connect/logout

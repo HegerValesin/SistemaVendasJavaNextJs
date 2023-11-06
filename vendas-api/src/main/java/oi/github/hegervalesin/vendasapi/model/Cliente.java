@@ -2,6 +2,8 @@ package oi.github.hegervalesin.vendasapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -43,13 +45,14 @@ public class Cliente {
         super();
     }
 
-    public Cliente(LocalDate nascimento, String cpf, String nome, String endereco, String telefone, String email) {
+    public Cliente(LocalDate nascimento, String cpf, String nome, String endereco, String telefone, String email, LocalDate dataCadastro ) {
         this.nascimento = nascimento;
         this.cpf = cpf;
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
         this.email = email;
+        this.dataCadastro = dataCadastro;
     }
 
 }
